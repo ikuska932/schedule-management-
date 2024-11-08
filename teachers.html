@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список преподавателей</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Список преподавателей</h1>
+    <ul>
+        {{range .}}
+            <li>{{.Name}} - {{.Qualification}}</li>
+        {{else}}
+            <li>Преподаватели не найдены</li>
+        {{end}}
+    </ul>
+</body>
+</html>
